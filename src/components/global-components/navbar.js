@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Social from '../section-components/social';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 class Navbar extends Component {
 
 	render() {
+
+		let isActive = '/';
+		
+
 		let publicUrl = process.env.PUBLIC_URL + '/'
 		return (
 			<div>
@@ -30,12 +35,7 @@ class Navbar extends Component {
 														<ul>
 															<li><a href="#" className="dropdown-toggle"><span className="active-currency">English</span></a>
 																<ul>
-																	<li><Link to="#">Arabic</Link></li>
-																	<li><Link to="#">Bengali</Link></li>
-																	<li><Link to="#">Chinese</Link></li>
 																	<li><Link to="#">English</Link></li>
-																	<li><Link to="#">French</Link></li>
-																	<li><Link to="#">Hindi</Link></li>
 																</ul>
 															</li>
 														</ul>
@@ -82,80 +82,17 @@ class Navbar extends Component {
 											<div className="ltn__main-menu go-top">
 												<ul>
 													<li><Link to="/">Home</Link>
-														
+
 													</li>
-													<li className="menu-icon"><Link to="/about">About</Link>
-														<ul>
-															<li><Link to="/about">About</Link></li>
-															<li><Link to="/service">Services</Link></li>
-															<li><Link to="/service-details">Service Details</Link></li>
-															<li><Link to="/portfolio">Portfolio</Link></li>
-															<li><Link to="/portfolio-v2">Portfolio - 02</Link></li>
-															<li><Link to="/portfolio-details">Portfolio Details</Link></li>
-															<li><Link to="/team">Team</Link></li>
-															<li><Link to="/team-details">Team Details</Link></li>
-															<li><Link to="/faq">FAQ</Link></li>
-															<li><Link to="/location">Google Map Locations</Link></li>
-														</ul>
+													<li ><Link to="/about">About</Link>
+
 													</li>
-													<li className="menu-icon"><Link to="/shop">Shop</Link>
-														<ul>
-															<li><Link to="/shop">Shop</Link></li>
-															<li><Link to="/shop-grid">Shop Grid</Link></li>
-															<li><Link to="/shop-left-sidebar">Shop Left sidebar</Link></li>
-															<li><Link to="/shop-right-sidebar">Shop Right sidebar</Link></li>
-															<li><Link to="/product-details">Shop Details</Link></li>
-															<li><Link to="/cart">Cart</Link></li>
-															<li><Link to="/checkout">Checkout</Link></li>
-															<li><Link to="/my-account">My Account</Link></li>
-															<li><Link to="/login">Sign in</Link></li>
-															<li><Link to="/register">Register</Link></li>
-														</ul>
+													<li ><Link to="/shop">Shop</Link> </li>
+													<li ><Link to="/blog">News</Link>
+
 													</li>
-													<li className="menu-icon"><Link to="/blog-grid">News</Link>
-														<ul>
-															<li><Link to="/blog">News</Link></li>
-															<li><Link to="/blog-grid">News Grid</Link></li>
-															<li><Link to="/blog-left-sidebar">News Left sidebar</Link></li>
-															<li><Link to="/blog-right-sidebar">News Right sidebar</Link></li>
-															<li><Link to="/blog-details">News details</Link></li>
-														</ul>
-													</li>
-													<li className="menu-icon"><Link to="#">Pages</Link>
-														<ul className="mega-menu">
-															<li><a href="#">Inner Pages</a>
-																<ul>
-																	<li><Link to="/portfolio">Portfolio</Link></li>
-																	<li><Link to="/portfolio-v2">Portfolio - 02</Link></li>
-																	<li><Link to="/portfolio-details">Portfolio Details</Link></li>
-																	<li><Link to="/team">Team</Link></li>
-																	<li><Link to="/team-details">Team Details</Link></li>
-																	<li><Link to="/faq">FAQ</Link></li>
-																</ul>
-															</li>
-															<li><Link to="#">Inner Pages</Link>
-																<ul>
-																	<li><Link to="/history">History</Link></li>
-																	<li><Link to="/add-listing">Add Listing</Link></li>
-																	<li><Link to="/location">Google Map Locations</Link></li>
-																	<li><Link to="/404">404</Link></li>
-																	<li><Link to="/contact">Contact</Link></li>
-																	<li><Link to="/coming-soon">Coming Soon</Link></li>
-																</ul>
-															</li>
-															<li><Link to="#">Shop Pages</Link>
-																<ul>
-																	<li><Link to="/shop">Shop</Link></li>
-																	<li><Link to="/shop-left-sidebar">Shop Left sidebar</Link></li>
-																	<li><Link to="/shop-right-sidebar">Shop right sidebar</Link></li>
-																	<li><Link to="/shop-grid">Shop Grid</Link></li>
-																	<li><Link to="/product-details">Shop details </Link></li>
-																	<li><Link to="/cart">Cart</Link></li>
-																</ul>
-															</li>
-															<li><Link to="/shop"><img src={"/assets/img/banner/menu-banner-1.jpg"} alt="#" /></Link>
-															</li>
-														</ul>
+													<li><Link to="/portfolio">Portfolio</Link>
+
 													</li>
 													<li><Link to="/contact">Contact</Link></li>
 												</ul>
