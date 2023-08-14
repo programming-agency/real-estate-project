@@ -62,7 +62,7 @@ class Footer_v1 extends Component {
 													<i className="icon-placeholder" />
 												</div>
 												<div className="footer-address-info">
-													<p>Brooklyn, New York, United States</p>
+													<p>Kurigram,Bangladesh</p>
 												</div>
 											</li>
 											<li>
@@ -70,7 +70,7 @@ class Footer_v1 extends Component {
 													<i className="icon-call" />
 												</div>
 												<div className="footer-address-info">
-													<p><a href="tel:+0123-456789">+0123-456789</a></p>
+													<p><a href="tel:+8801518-919421">+8801518-919421</a></p>
 												</div>
 											</li>
 											<li>
@@ -78,7 +78,7 @@ class Footer_v1 extends Component {
 													<i className="icon-mail" />
 												</div>
 												<div className="footer-address-info">
-													<p><a href="mailto:example@example.com">example@example.com</a></p>
+													<p><a href="mailto:info@programming-agency.com">info@programming-agency.com</a></p>
 												</div>
 											</li>
 										</ul>

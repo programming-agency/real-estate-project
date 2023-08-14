@@ -17,8 +17,7 @@ class ContactInfo extends Component {
 								<img src={"/assets/img/icons/10.png"} alt="Icon Image" />
 							</div>
 							<h3>Email Address</h3>
-							<p>info@webmail.com <br />
-								jobs@webexample.com</p>
+							<p>info@programming-agency.com</p>
 						</div>
 					</div>
 					<div className="col-lg-4">
@@ -27,7 +26,7 @@ class ContactInfo extends Component {
 								<img src={"/assets/img/icons/11.png"} alt="Icon Image" />
 							</div>
 							<h3>Phone Number</h3>
-							<p>+0123-456789 <br /> +987-6543210</p>
+							<p>+8801518-919421</p>
 						</div>
 					</div>
 					<div className="col-lg-4">
@@ -36,8 +35,7 @@ class ContactInfo extends Component {
 								<img src={"/assets/img/icons/12.png"} alt="Icon Image" />
 							</div>
 							<h3>Office Address</h3>
-							<p>18/A, New Born Town Hall <br />
-								New York, US</p>
+							<p>kurigram , Bangladesh</p>
 						</div>
 					</div>
 				</div>
