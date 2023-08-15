@@ -15,7 +15,7 @@ class BannerV8 extends Component {
 					<div className="ltn__slide-item-inner">
 						<div className="slide-item-info bg-overlay-white-90 text-center">
 							<div className="slide-item-info-inner  ltn__slide-animation">
-								<h1 className="slide-title animated text-uppercase">OUR MODERN LIVING QUARTERS</h1>
+								<h1 className="slide-title animated text-uppercase">OUR MODERN LIVING luxuryS</h1>
 								<h4 className="slide-sub-title text-uppercase animated">SITEWIDE 21% OFF</h4>
 								<div className="btn-wrapper animated go-top">
 									<Link to="/shop" className="theme-btn-1 btn btn-effect-1 text-uppercase">Shop now</Link>

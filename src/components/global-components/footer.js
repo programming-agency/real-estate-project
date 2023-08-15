@@ -18,12 +18,12 @@ class Footer_v1 extends Component {
 
 		$('.go-top').find('a').on('click', function () {
 
-			$(".quarter-overlay").fadeIn(1);
+			$(".luxury-overlay").fadeIn(1);
 
 			$(window).scrollTop(0);
 
 			setTimeout(function () {
-				$(".quarter-overlay").fadeOut(300);
+				$(".luxury-overlay").fadeOut(300);
 			}, 800);
 
 		});
